@@ -1,0 +1,127 @@
+
+@media only screen and (max-width: 900px){
+	.main-container{
+		width: 98%;
+	}
+	.row{
+		width: 100%;
+	}
+} 
+
+@media only screen and (max-width: 700px){
+
+	html{
+		font-size: 8px;
+	}
+
+	.main-container{
+		height:60vh
+	}
+
+}
+
+@media only screen and (max-width: 599px){
+
+	html{
+		font-size: 	7px;
+	}
+
+	.col{
+		width:100%;
+	}
+
+	.name{
+		top:5%;
+	}
+
+	.main-container{
+		height: 89vh;
+		top:55%;
+		width:90%;
+		overflow: hidden;
+	}
+
+	.player-divs{
+		height: 44vh;
+	}
+
+	.btn-new,.btn-roll,
+	.btn-hold{
+		top:50%;
+	}
+
+	.btn i{
+		display: block;
+	}
+
+	.btn{
+		text-align: center;
+	}
+
+	.dice{
+		top:50%;
+		width:13rem;
+	}
+
+	.btn-new{
+		left:15%;
+	}
+
+	.btn-roll{
+		left: 76%;
+	}
+
+	.btn-hold{
+		left: 90%;
+	}
+	.players{
+		position: absolute;
+		top: 3%;
+		transform:translate(-50%,-50%);
+	}
+	.score{
+		font-size: 16rem;
+		position: absolute;
+		top:50%;
+		left:50%;
+		margin:0;
+		transform: translate(-50%,-50%);
+	}
+
+	#n-1{
+		left:20%;
+	}
+
+	#n-2{
+		right:17%;
+	}
+
+	.locals{
+		height: 12rem;
+		text-align: left;
+		bottom: 20%;
+		left:100%;
+		padding: 4rem 1.4rem;
+		transform: translate(-50%,-50%);
+	}
+	.active .players::after {
+		width:40%;
+		margin-left: 30%;
+	}
+
+}
+
+@media only screen and (max-width: 395px){
+
+	.btn-roll{
+		left: 74%;
+	}
+
+	.btn-hold{
+		left: 94%;
+	}
+
+	.btn{
+		font-size: 1.8rem;
+	}
+}
