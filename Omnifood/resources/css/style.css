@@ -1,0 +1,621 @@
+/*--------------------------*/
+/* Omnifood default styles */
+/* color - #3498db*/
+
+*{
+	margin : 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html,
+body{
+	font-size: 20px;
+	font-weight: 300;
+	font-family: 'Lato', arial , sans-serif;
+	background-color: #fff;
+	color: #555;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+
+}
+
+/*--------------------------*/
+/* Reusable Code */
+
+.row{
+	max-width: 1140px;
+	margin : 0 auto;
+}
+
+h1,h2,h3{
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h1{
+	margin: 0;
+	margin-bottom: 30px;
+	color:white;
+	font-size:200%;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+}
+
+h2{
+	margin-bottom: 30px;
+	font-size:180%;
+	letter-spacing: 1px;
+	word-spacing:2px;
+	text-align: center;
+}
+
+h2:after{
+	display: block;
+	content:"";
+	height:2px;
+	width:200px;
+	background-color:#3498db;
+	margin: 0 auto;
+	margin-top:30px;
+}
+
+h3{
+	font-size:110%;
+	margin-bottom: 20px;
+}
+
+section{
+	padding: 80px 0;
+}
+
+.long-copy{
+	line-height: 145%;
+	width:70%;
+	margin-left:15%;
+	margin-bottom: 30px;
+}
+
+.clearfix{zoom:1;}
+.clearfix:after{
+	content:'';
+	height:0;
+	clear:both;
+	display: block;
+	visibility: hidden;
+}
+.box p{
+	font-size:90%;
+	word-spacing: 1px;
+	line-height:145%;
+}
+
+.icon-big{
+	font-size:350%;
+	display:block;
+	margin-bottom: 10px;
+	color: #3498db ;
+}
+
+.icon-small{
+	display:inline-block;
+	width:30px;
+	text-align: center;
+	color: #3498db;
+	font-size: 120%;
+	/*secrets*/
+	line-height: 120%;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-top: -5px;
+}
+
+a:link,
+a:visited{
+	color: #3498db;
+	text-decoration: none;
+	opacity: 1;
+	-webkit-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+a:hover,
+a:active{
+	opacity: 0.8;s
+}
+
+/*--------------------------*/
+/* Header */
+
+header{
+	background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))),url('E:/Omnifood/resources/img/hero2.jpg');
+	background-image: -o-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('E:/Omnifood/resources/img/hero2.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('E:/Omnifood/resources/img/hero2.jpg');
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*Navigation*/
+
+.logo{
+	height:100px;
+	width: auto;
+	margin-top: 20px;
+	float:left;
+}
+
+.logo-black{
+	height:50px;
+	width: auto;
+	margin-top: 5px;
+	float:left;
+	display: none;
+}
+
+.sticky{
+	position: fixed;
+	width:100%;
+	z-index:9999;
+	top:0;
+	left:0;
+	background-color: rgba(255,255,255,0.9);
+	-webkit-box-shadow: 0 2px 2px #e8e8e8;
+	        box-shadow: 0 2px 2px #e8e8e8;
+}
+
+.sticky .main-nav{margin-top:18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+	padding: 16px 0;
+	color:#555;
+}
+
+.sticky .logo-black{display:block;}
+.sticky .logo{display:none;}
+
+.main-nav{
+	list-style: none;
+	float: right;
+	margin-top: 55px;
+}
+
+.mobile-nav-icon{
+	float:right;
+	color:#fff;
+	font-size:180%;
+	margin-top:46px;
+	margin-right:10px;
+	cursor:pointer;
+	display:none;
+}
+
+.sticky .mobile-nav-icon{
+	color:black;
+	margin-top:15px;
+	font-size:150%;
+}
+
+.main-nav li{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding:8px 0;
+	letter-spacing: 1px;
+	font-size: 85%;
+	border-bottom: 2px solid transparent;
+	-webkit-transition: border-bottom 0.2s;
+	-o-transition: border-bottom 0.2s;
+	transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 2px solid #3498db;
+}
+
+.hero-text-box{
+	position: absolute;
+	width:1140px;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+
+/*Buttons style*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+	display: inline-block;
+	-webkit-transition: background-color 0.2s,border 0.2s,color 0.2s;
+	-o-transition: background-color 0.2s,border 0.2s,color 0.2s;
+	transition: background-color 0.2s,border 0.2s,color 0.2s;
+	text-decoration: none;
+	border : 1px solid #3498db;
+	border-radius: 40px;
+	padding: 10px 30px ;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]:link,
+input[type=submit]:visited{
+	color:white;
+	background-color: #3498db;
+	margin-right: 10px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+	color: #3498db;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover{
+	background-color: #2980b9;
+	color:white;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+	color:#ffffff;
+	border: 1px solid #2980b9;
+}
+
+.btn-full:hover,
+.btn-full:active{
+	border: 1px solid #2980b9;
+	color:white;
+}
+
+/*--------------------------*
+/* section features*/
+
+
+
+/*--------------------------*
+/* Meals */
+
+.section-meals{
+	padding: 0;
+}
+
+.meals-showcase{
+	list-style: none;
+	width:100%;
+}
+
+.meals-showcase li{
+	display:block;
+	float:left;
+	width:25%;
+}
+
+.meals-photo{
+	background-color: #000;
+	margin:0;
+	overflow:hidden;
+}
+
+.meals-photo img{
+	opacity:0.7;
+ 	-webkit-transform: scale(1.15);
+ 	    -ms-transform: scale(1.15);
+ 	        transform: scale(1.15);
+ 	width:100%;
+ 	height:auto;
+	-webkit-transition: opacity 0.5s,-webkit-transform 0.5s;
+	transition: opacity 0.5s,-webkit-transform 0.5s;
+	-o-transition: transform 0.5s,opacity 0.5s;
+	transition: transform 0.5s,opacity 0.5s;
+	transition: transform 0.5s,opacity 0.5s,-webkit-transform 0.5s;
+}
+
+.meals-photo img:hover{
+	opacity:1;
+	-webkit-transform: scale(1.03);
+	    -ms-transform: scale(1.03);
+	        transform: scale(1.03);
+}
+
+/*--------------------------*
+/* section how How it works */
+
+.section-how{
+	background-color: #f4f4f4;
+}
+
+.subsecworks:first-child{
+	text-align:right;
+	padding-right: 3%;
+	margin-top:30px;
+}
+
+.subsecworks:last-child{
+	padding-left: 3%;
+	margin-top:70px;
+}
+
+.app-screen{
+	width:40%;
+}
+
+.work-steps{
+	margin-bottom: 50px;
+}
+
+.work-steps:last-of-type{
+	margin-bottom: 80px;
+}
+
+.work-steps div{
+	border:2px solid #3498db;
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	text-align:center;
+	font-size:150%;
+	padding:5px;
+	float:left;
+	margin-right: 25px;
+}
+
+.btn-app img{
+	height: 50px;
+	width: auto;
+	margin-right:10px;
+}
+
+/*--------------------------*/
+/* section-cities */
+
+.box img{
+	width : 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.city-features{
+	margin-bottom: 5px;
+}
+
+/*--------------------------*/
+/* section-testimonials */
+
+.section-testimonials{
+	background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.8)),to(rgba(0,0,0,0.8))),url(E:/Omnifood/resources/img/back-customers.jpg);
+	background-image: -o-linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(E:/Omnifood/resources/img/back-customers.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(E:/Omnifood/resources/img/back-customers.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	color:#fff;
+}
+
+cite{
+	display: block;
+	font-size:90%;
+	margin-top:55px;
+}
+
+cite img{
+	height:45px;
+	border-radius:50%;
+	margin-right:10px;
+	vertical-align: middle;
+}
+
+blockquote{
+	font-style: italic;
+	padding:2%;
+	line-height: 145%;
+	position:relative;
+	margin-top:40px;
+}
+
+blockquote:before{
+	content:"\201C";
+	font-size: 500%;
+	display: block;
+	top: -5px;
+	left : -5px;
+	position: absolute;
+}
+
+/*--------------------------*
+/* section plans */
+
+.section-plans{
+	background-color: #f4f4f4;
+}
+
+.plans{
+	width:90%;
+	margin-left:5%;
+	border-radius:5px;
+	background-color: #fff;
+	-webkit-box-shadow:0 2px 2px #efefef;
+	        box-shadow:0 2px 2px #efefef;
+}
+
+.plans div ul{
+	list-style: none;
+}
+
+.plans h3{
+	text-align: left;
+}
+
+.plans div ul li{
+	padding:5px 0;
+	text-align: left;
+}
+
+.plans:first-child{
+	background-color: #fefefe;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.plans:last-child{
+	text-align: center;
+	border-bottom: 0;
+
+}
+
+.plans div{
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 10px;
+}
+
+.plan-price{
+	font-size:300%;
+	font-weight: 100;
+	margin-bottom:10px;
+	color:#3489db;
+	text-align: left;
+}
+
+.plan-price span{
+	font-size:30%;
+	font-weight: 300;
+}
+
+.plan-price-meal{
+	font-size:90%;
+	text-align: left;
+}
+
+/*--------------------------*
+/* contact-form */
+
+.contact-form{
+	width:60%;
+	margin:0 20%;
+} 
+
+*:focus{
+	outline: none;
+}
+
+input[type=text],input[type=email],
+select,textarea{
+	width:100%;
+	padding:7px;
+	border-radius:5px;
+	border:1px solid #ccc;
+}
+
+textarea{
+	height:100px;
+}
+
+input[type=checkbox]{
+	margin: 10px 5px 10px 0;
+}
+
+label{
+	color:#3498db;
+}
+
+/*--------------------------*/
+/* footer */
+
+footer{
+	background-color: #001829;
+	color:#a7a6a6;
+	font-size: 80%;
+	padding: 40px 0 10px 0;
+}
+
+.site-navigation{
+	list-style: none;
+	float:left;
+}
+
+.social-navigation{
+	list-style: none;
+	float:right;
+}
+
+.site-navigation li,
+.social-navigation li{
+	display:inline-block;
+	padding: 0 10px;
+	margin-right:0;
+}
+
+.site-navigation li a:link,
+.site-navigation li a:visited,
+.social-navigation li a:link,
+.social-navigation li a:visited{
+	color:#a7a6a6;
+}
+
+.site-navigation li a:hover,
+.site-navigation li a:active{
+	color:#a7a6a6;
+}
+
+.social-navigation .icon{
+	font-size:170%;
+	color:#a7a6a6;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover{
+	color:#3b5998 ;
+}
+.ion-logo-twitter:hover{
+	color:#00aced;
+}
+.ion-logo-instagram:hover{
+	color:#e10038;	
+}
+.ion-logo-googleplus:hover{
+	color:#dd4b39;
+}
+
+footer p{
+	text-align: center;
+	margin-top:40px;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+}
+
+/*Animations*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+	opacity:0;
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated{
+	opacity:1;
+}	
+
+.js--wp-4{
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
+}
+
