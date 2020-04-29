@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400i&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 10px;
+            font-family: 'Lato';
+            font-weight: 300;
+        }
+
+        .login{
+            width: 50rem;
+            margin: 0 auto;
+            position: absolute;
+            top :50%;
+            background-image: linear-gradient(rgba(255, 231, 17, 0.9),rgba(255, 136, 0, 0.9)) ;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 3px;
+            box-shadow: 0 1px 5px rgba(255, 136, 0, 0.9);
+            padding: 3rem 3rem;
+        }
+
+        .user_name, .password{
+            display: block;
+            height: 3rem;
+            width: 90%;
+            margin: 2rem auto;
+            padding: 2rem 1rem;
+            font-size: 1.8rem;
+            color: #555;
+            margin-bottom: 2rem;
+            font-family: 'Lato';
+            font-weight: 400;
+        }
+
+        .user_name:focus,.password:focus,select:focus{
+            outline: none;
+        }
+
+        select{
+            display: block;
+            height: 3rem;
+            width: 90%;
+            margin: 2rem auto;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 1.8rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form action="#">
+            <input type="text" class="user_name" placeholder="Your username">
+            <input type="text" class="password" placeholder="Your password">
+            <select>
+                <option value="Select-Course" selected>-Select-Course-</option>
+                <option value="htmlandcss">HTML 5 and CSS 3 : Build responsive websites</option>
+            </select>
+            <a href="#" class="submit">Login</a>
+         </form>
+    </div>
+    
+</body>
+</html>
